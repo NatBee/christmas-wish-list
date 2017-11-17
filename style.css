@@ -1,0 +1,96 @@
+body {
+	background-image: url('images/christmas-background.jpg');
+	color: #E8AF11;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+    font-size: 5em;
+	justify-content: center;
+	padding: 50px 0px 0px 0px;
+}
+
+.header-1 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.header-2 {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.inputs {
+	color: #FEFEBE;
+	font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.inputs h2 {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+::placeholder {
+	font-size: 2em;
+	text-align: left;
+}
+
+.list-inputs {
+    height: 20px;
+    padding: 8px 6px 0px;
+    vertical-align: middle;
+	width: 300px;
+}
+
+button {
+    background: #E8AF11; 
+    font-size: .75em;
+    margin: 36px 25px 0px 25px;
+    padding: 3px 70px;
+}
+
+.search {
+	color: #FEFEBE;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+}
+
+.search h2 {
+	display: inline-block;
+	font-size: 2em;
+}
+
+/*card styling*/
+
+.wish-list {
+	align-items: center;
+	display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.wish-item {
+	background: black;
+	border: 2px solid;
+	margin: 10px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.list-btns {
+	display: flex;
+}
+
+.total {
+    padding: 40px 25px 0px 25px;
+}
+
+.delete {
+    padding: 40px 25px 0px 25px;
+}
+
+.purchased {
+    padding: 40px 25px 0px 25px;
+}

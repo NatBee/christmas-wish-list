@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Christmas Wish List</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Fira+Sans|Fjalla+One" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width">
+	</head>	
+	<body>
+		<header class="header">
+			<h1 class="header-1">CHRISTMAS</h1>
+			<h1 class="header-2">Wish</h1>
+			<h1 class="header-1">LIST</h1>
+		</header>
+		<form class="inputs">
+			<h2>Item: </h2>
+			<label for="item"></label>
+			<input type="text" id="item" name="item" required="true" placeholder="Item" class="list-inputs">
+			<h2>Price: </h2>
+			<label for="item-price"></label>
+			<input type="text" id="item-price" name="item-price" required="true" placeholder="Price" class="list-inputs">
+			<button class="submit-button">Submit</button>
+		</form>		
+		<form class="search">
+			<h2>Search:</h2>
+			<label for="search"></label>
+			<input type="text" id="search" name="search" required="true" placeholder="Search List" class="list-inputs">
+		</form>
+		<section class="wish-list">
+			<!-- <ul>
+				<li>Item: Earings</li>
+				<li>Price: $50</li>
+			</ul>
+			<div class="total">Total</div>
+			<div class="delete">Delete</div>
+			<div class="purchased">Purchased</div> -->
+		</section>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="./jQuery/jquery-3.2.1.min.js"><\/script>')</script>
+		<script src="./script.js"></script>
+	</body>
+</html>
