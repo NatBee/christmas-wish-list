@@ -33,13 +33,14 @@ body {
 }
 
 ::placeholder {
-	font-size: 2em;
+	/*font-size: 2em;*/
 	text-align: left;
 }
 
 .list-inputs {
+	font-size: .75em;
     height: 20px;
-    padding: 8px 6px 0px;
+    padding: 6px 6px 6px;
     vertical-align: middle;
 	width: 300px;
 }
@@ -54,12 +55,12 @@ button {
 .search {
 	color: #FEFEBE;
 	font-family: 'Dosis', sans-serif;
+	font-size: 2em;
 	text-align: center;
 }
 
 .search h2 {
 	display: inline-block;
-	font-size: 2em;
 }
 
 /*card styling*/
