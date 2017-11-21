@@ -7,6 +7,7 @@ window.onload = loadStoredWish();
 
 $('input').on('keyup', enableSubmit);
 $submit.on('click', newWish);
+$('.total').on('click', itemTotalCost);
 
 function enableSubmit() {
 	if(($item.val() === '' && $price.val() !== '') || ($item.val() !== '' && $price.val() === '')) {
@@ -33,8 +34,8 @@ function Wish(item, price, desire, id) {
 
 function addToWishList(item, price, desire, id) {
 	var wishObject = $(`<ul id='${id}' class="wish-item"><li>ITEM: ${item}</li>
-		<li>PRICE: $${price}</li><span class="list-btns"><div class="total">Total</div>
-		<div class="delete">Delete</div><div class="purchased">${desire}</div></span></ul>`)
+		<li>PRICE: $${price}</li><span class="list-btns"><div class="wish-btn total">Total</div>
+		<div class="wish-btn delete">Delete</div><div class="wish-btn desire">${desire}</div></span></ul>`)
 	wishObject.prependTo($wishList);
 	clearInputs();
 }
@@ -56,9 +57,7 @@ function storeWish(name, cost, desire, id) {
 
 function wishArchive(id) {
 	var retrievedWish = localStorage.getItem(id);
-	console.log(retrievedWish);
 	var parsedWish = JSON.parse(retrievedWish);
-	console.log(parsedWish);
 	addToWishList(parsedWish.item, parsedWish.price, parsedWish.desire, id);
 }
 
@@ -71,6 +70,15 @@ function loadStoredWish() {
 	});
 }
 
+function itemTotalCost(e) {
+	var id = $(e.target).parent().parent().attr('id');
+	var pullStoredWish = localStorage.getItem(id);
+	var parsePulledWish = JSON.parse(pullStoredWish);
+	var cost = parseInt(parsePulledWish.price)
+	var tax = cost * .1;
+	var total = cost + tax;
+	$('.wish-item').append('<li>Tax: $ ' + tax + '</li><li>Total Cost: $' + total + '</li>');
+}
 
 
 
