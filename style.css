@@ -74,8 +74,9 @@ button {
 .wish-item {
 	background: black;
 	border: 2px solid;
+	font-size: 1.5em;
 	margin: 10px;
-    padding: 15px 0px;
+    padding: 15px 200px;
     text-align: center;
 }
 
@@ -83,14 +84,10 @@ button {
 	display: flex;
 }
 
-.total {
-    padding: 40px 25px 0px 25px;
+.wish-btn {
+    padding: 40px 25px 40px 25px;
 }
 
-.delete {
-    padding: 40px 25px 0px 25px;
-}
-
-.purchased {
-    padding: 40px 25px 0px 25px;
+.wish-btn:hover {
+	color: #F5E606;
 }
